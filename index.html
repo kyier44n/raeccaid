@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raecca Beauty Care</title>
+  <link rel="stylesheet" href="styleraecca.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+        <div class="">
+        <img src="raecca.jpeg" alt="Raecca logo">
+    </nav>
+   
+    <nav>
+      <a href="#hero">Beranda</a>
+      <a href="#about">Tentang</a>
+      <a href="#products">Produk</a>
+      <a href="#contact">Kontak</a>
+      <a href="#cart" class="cart-btn">🛒 <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+<br>
+<br>
+  <section class="hero" id="hero">
+    <h1>Raecca</h1>
+    <p>For Every Woman in the World, We are PERFECT</p>
+    <br>
+     <p class="desc">
+      <small><cite>Raecca adalah brand makeup lokal yang menghadirkan pesona alami lewat setiap sentuhan warna.
+      lip tint, lip balm, hingga lip gloss — semua dirancang untuk membuat bibirmu lembap, segar, dan memikat setiap hari.</cite></small></p>
+    <button class="btn">Jelajahi Koleksi</button>
+  </section>
+
+  <section id="about" class="about">
+    <h2>Tentang Raecca</h2>
+    <p>Raecca adalah brand kecantikan lokal Indonesia yang didirikan oleh Jessica Amelia. 
+        Perusahaan ini menawarkan berbagai produk perawatan dan kosmetik seperti lip tint, lip serum, dan clay mask yang populer karena kandungan bahan-bahan berkualitasnya dan harganya yang terjangkau. 
+        Produknya diklaim efektif melembapkan, menutrisi, dan memberikan tampilan natural. </p>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Koleksi Produk</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="raecca lipbalm.jpeg" alt="Dress Elegant">
+        <h3>Raecca | Tinted Jelly Balm</h3>
+        <p>Rp 69.900</p>
+        <button class="add-cart" data-name="Raecca | Tinted Jelly Balm" data-price="69900">Tambah ke Keranjang</button>
+      </div>
+      <div class="product">
+        <img src="raecca lip.jpeg" alt="Raecca Bag">
+        <h3>Raecca | Swipe To Glow</h3>
+        <p>Rp 64.500</p>
+        <button class="add-cart" data-name="Raecca | Swipe To Glow" data-price="64500">Tambah ke Keranjang</button>
+      </div>
+      <div class="product">
+        <img src="raecca liptint.jpeg" alt="Raecca Scarf">
+        <h3>Raecca | Glow Up Tint</h3>
+        <p>Rp 55.000</p>
+        <button class="add-cart" data-name="Raecca | Glow Up Tint" data-price="55000">Tambah ke Keranjang</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="cart" class="cart">
+    <h2>Keranjang Belanja</h2>
+    <ul id="cart-items"></ul>
+    <p id="total">Total: Rp 0</p>
+    <button id="checkout-btn" class="btn">Checkout via WhatsApp</button>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Hubungi Kami</h2>
+    <p>Ingin berkolaborasi atau memesan khusus? Hubungi kami melalui WhatsApp atau email.</p>
+    <a href="https://wa.me/6281234567890" target="_blank" class="btn">💬 WhatsApp</a>
+    <a href="mailto:info@raecca.id" class="btn">✉️ Email</a>
+  </section>
+
+  <footer>
+    <p>Ikuti kami di</p>
+  <div class="socials">
+    <a href="https://www.instagram.com/raeccaid/?hl=en" target="_blank">
+      <img src="ig.jpeg" alt="Instagram">
+    </a>
+
+    <a href="https://www.tiktok.com/@raeccaid?lang=en" target="_blank">
+      <img src="tiktok.png" alt="TikTok">
+    </a>
+
+    <a href="https://shopee.co.id/raeccaofficial" target="_blank">
+      <img src="shopee.png" alt="Shopee">
+    </a>
+  </div>
+  <br>
+    © 2025 Raecca. All Rights Reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

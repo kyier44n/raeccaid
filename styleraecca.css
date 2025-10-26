@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffdfe5;
+}
+
+
+header {
+  width:100% ;
+  padding: 11px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff
+}
+
+nav div img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 2px solid #d89ca0;   
+    box-shadow: 0 0 8px rgba(0,0,0,0.1); 
+}
+
+div img {
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2d2d2d;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #D4AEB8;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url('https://images.unsplash.com/photo-1520975918311-3a9b6a76f42f') center/cover no-repeat;
+  text-align: center;
+  color: #A7586D;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  animation: fadeInDown 1s ease;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  animation: fadeInUp 1.5s ease;
+}
+
+.hero {
+  background-color: #fcd9df;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-content {
+  max-width: 100px;  
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 80px;
+  color: #a35d6a;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px #e7b5bf;
+}
+
+.hero-content .tagline {
+  font-size: 22px;
+  color: #a35d6a;
+  margin-bottom: 15px;
+}
+
+.hero-content .desc {
+  font-size: 18px;
+  color: #854f58;
+  line-height: 1.6;
+  max-width: 200px; 
+  margin: 0 auto 40px;
+}
+
+.btn {
+  margin-top: 30px;
+  background: #d89ca0;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #b47b82;
+}
+
+.btn-outline {
+  border: 2px solid #b77284;
+  color: #b77284;
+  padding: 10px 26px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: #b77284;
+  color: white;
+}
+
+
+.about, .products, .contact, .cart {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.about h2, .products h2, .contact h2, .cart h2 {
+  font-size: 2rem;
+  color: #d89ca0;
+  margin-bottom: 20px;
+  border: 2px solid #b58b8b; 
+  padding: 5px 10px;          
+  border-radius: 8px;     
+  text-shadow: 2px 2px 4px rgb(255, 255, 255); 
+}
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.product {
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product h3 {
+  margin-top: 15px;
+  color: #333;
+}
+
+.product p {
+  color: #777;
+  margin: 10px 0;
+}
+
+
+.cart ul {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.cart li {
+  background: #f8f8f8;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 30px 10%;
+  background-color: #f8f8f8;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+section {
+  scroll-margin-top: 100px; 
+}
+
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media (max-width: 768px) {
+  nav a {
+    margin-left: 15px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .about, .products, .contact, .cart {
+    padding: 70px 5%;
+  }
+}
+
+.contact {
+  background-color: #ffdfe5; 
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #b3747a;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.contact .btn {
+  background-color: #c78d94;
+  color: white;
+  margin: 10px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact .btn:hover {
+  background-color: #a86a72;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .contact .btn {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 30px 0;
+  font-family: 'Poppins', sans-serif;
+  color: #555;
+}
+
+footer .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 15px 0;
+}
+
+footer .socials img {
+  width: 50px;          
+  height: 50px;        
+  border-radius: 15px;  
+  object-fit: cover;    
+  transition: transform 0.3s ease;
+}
+
+footer .socials img:hover {
+  transform: scale(1.1);
+}
+
+footer .socials img:nth-child(2) {
+  background-color: white;
+  padding: 5px;
+  border-radius: 15px;
+}
